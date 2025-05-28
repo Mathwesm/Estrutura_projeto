@@ -14,3 +14,4 @@ def test_concat_list_dataFrame():
 
     assert df.shape == (4, 2)
     assert data_frame.equals(df)
+    assert df.shape != (5, 2)
