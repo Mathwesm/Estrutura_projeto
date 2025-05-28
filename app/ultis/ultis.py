@@ -1,26 +1,31 @@
+import os
 from functools import wraps
 from sys import stderr
 
 from loguru import logger
+
+LOG_DIR = "logs"
+os.makedirs(LOG_DIR, exist_ok=True)
 
 logger.remove()
 
 
 logger.add(stderr, format="{time} {level} {message} {file}", level="INFO")
 
+
 logger.add(
-    "meu_arquivo_do_logs.log", format="{time} {level} {message} {file}", level="INFO"
+    os.path.join(LOG_DIR, "meu_arquivo_do_logs.log"),
+    format="{time} {level} {message} {file}",
+    level="INFO",
 )
 
-
 logger.add(
-    "meu_arquivo_do_logs_critical.log",
+    os.path.join(LOG_DIR, "meu_arquivo_do_logs_critical.log"),
     format="{time} {level} {message} {file}",
     level="CRITICAL",
 )
 
 
-# Decorador
 def log_decorador(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
