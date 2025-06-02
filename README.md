@@ -1,1 +1,1 @@
-Essa é a documentação do meu projeto: [Meu Projeto](https://github.com/Mathwesm/Estrutura_projeto/pull/new/gh-pages)
+Essa é a documentação do meu projeto: [Meu Projeto](https://mathwesm.github.io/Estrutura_projeto/)
