@@ -2,7 +2,7 @@ import pandas as pd
 
 from app.pipeline.etl.trasnform import contact_data_frame
 
-df_1 = pd.DataFrame({"col1": [6, 2], "col2": [3, 4]})
+df_1 = pd.DataFrame({"col1": [1, 2], "col2": [3, 4]})
 df_2 = pd.DataFrame({"col1": [5, 6], "col2": [7, 8]})
 
 
