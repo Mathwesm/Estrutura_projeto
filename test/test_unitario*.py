@@ -1,5 +1,3 @@
-"""Tests for unit functionalities."""
-
 import os
 
 import pandas as pd
