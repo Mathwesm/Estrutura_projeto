@@ -12,7 +12,7 @@ def extract_format_excel(path: str) -> List[pd.DataFrame]:
     all_files = glob.glob(os.path.join(path, "*.xlsx"))
 
     if not all_files:
-        raise ValueError("No Excel files found")
+        raise ValueError("No Excel " "files found")
 
     df_frame_list = []
     for file in all_files:
