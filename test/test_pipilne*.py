@@ -8,6 +8,7 @@ df_2 = pd.DataFrame({"col1": [5, 6], "col2": [7, 8]})
 
 def test_concat_list_dataFrame():
     data_frame_list = [df_1, df_2]
+
     data_frame = pd.concat(data_frame_list, ignore_index=True)
 
     df = contact_data_frame(data_frame_list)
